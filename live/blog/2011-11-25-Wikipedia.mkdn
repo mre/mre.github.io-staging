@@ -1,19 +1,20 @@
 ---
+11/25/2011
 layout: post
 title: What is Wikipedia
 published: false
 ---
 
 What is Wikipedia
-  The Wikipedia foundation -> Provides infrastructure
-  The Wikipedia Community -> Rulesets, administration, maintainers
-  Wikipedia - The Encyclopedia -> The pure content, plaintext
+  Wikipedia - The foundation -> Provides infrastructure
+  Wikipedia - The community -> Rulesets, administration, maintainers
+  Wikipedia - The encyclopedia -> The pure content, plaintext
 
 When people complain about Wikipedia, it's often hard to say, which part
-the complain about. If they are talking about infrastructure and wether
+they complain about. If they are talking about infrastructure and wether
 advertisements should be used instead of donations, then they talk about
-the "Foundation".
-Most of the time, problems arise, with the administrators.
+the Wikipedia, the foundation.
+But most of the time, problems arise, with the administrators.
 
 Wikipedia Adminstrators are conservative by any account.
 One article I've created got deleted.
