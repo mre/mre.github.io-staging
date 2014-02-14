@@ -1,11 +1,5 @@
----
-11/25/2011
-layout: post
-title: What is Wikipedia
-published: false
----
-
 What is Wikipedia
+
   Wikipedia - The foundation -> Provides infrastructure
   Wikipedia - The community -> Rulesets, administration, maintainers
   Wikipedia - The encyclopedia -> The pure content, plaintext

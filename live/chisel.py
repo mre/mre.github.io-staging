@@ -8,6 +8,7 @@
 
 import sys, re, time, os, codecs
 import jinja2, markdown
+import shutil
 
 #Settings
 SOURCE = "./blog/" #end with slash
@@ -21,7 +22,7 @@ TEMPLATES = {
     'archive': "archive.html",
 }
 TIME_FORMAT = "%B %d, %Y"
-ENTRY_TIME_FORMAT = "%m/%d/%Y"
+ENTRY_TIME_FORMAT = "%Y-%m-%d"
 #FORMAT should be a callable that takes in text
 #and returns formatted text
 FORMAT = lambda text: markdown.markdown(text, ['footnotes',]) 
@@ -45,13 +46,13 @@ def get_tree(source):
             path = os.path.join(root, name)
             f = open(path, "rU")
             title = f.readline()
-            date = time.strptime(f.readline().strip(), ENTRY_TIME_FORMAT)
+            date = time.strptime(name[:10], ENTRY_TIME_FORMAT)
             year, month, day = date[:3]
             files.append({
                 'title': title,
                 'epoch': time.mktime(date),
-                'content': FORMAT(''.join(f.readlines()[1:]).decode('UTF-8')),
-                'url': '/'.join([str(year), "%.2d" % month, "%.2d" % day, os.path.splitext(name)[0] + ".html"]),
+                'content': FORMAT(''.join(f.readlines()).decode('UTF-8')),
+                'url': '/'.join([str(year), "-".join(title.split()), "index.html"]),
                 'pretty_date': time.strftime(TIME_FORMAT, date),
                 'date': date,
                 'year': year,
@@ -77,9 +78,18 @@ def write_file(url, data):
     file.write(data.encode('UTF-8'))
     file.close()
 
+def cleanup():
+  """ Remove all previously generated pages """
+  for root, dirs, files in os.walk(DESTINATION):
+    for f in files:
+    	os.unlink(os.path.join(root, f))
+    for d in dirs:
+    	shutil.rmtree(os.path.join(root, d))
+
 @step
 def generate_homepage(f, e):
     """Generate homepage"""
+    cleanup()
     template = e.get_template(TEMPLATES['home'])
     write_file("index.html", template.render(entries=f[:HOME_SHOW]))
 
