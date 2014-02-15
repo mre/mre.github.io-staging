@@ -6,9 +6,8 @@
             <h2><a href="/{{ entry.url }}">{{ entry.title }}</a></h2>
             <h3>{{ entry.pretty_date }}</h3>
             <div class="entry_content">
-                {{ entry.content }}
+                {{ entry.content | truncate}}
             </div>
-            <p class="permalink"><a href="/{{ entry.url}}">#permalink</a></p>
         </div>
     {% endfor %}
 {% endblock %}
