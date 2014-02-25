@@ -1,24 +1,28 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >        
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>nodnod.net</title>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-    <link rel="stylesheet" type="text/css" href="/css/global.css" />
-    {% block extra_css %}{% endblock %}
-    <!--[if lte IE 6]>
-        <link rel="stylesheet" type="text/css" href="/css/ie6.css" />
-    <![endif]-->
-    <!--[if IE 7]>
-        <link rel="stylesheet" type="text/css" href="/css/ie7.css" />
-    <![endif]-->
-    <script src="/js/jquery.js" type="text/javascript"></script>
-    <script src="/js/global.js" type="text/javascript"></script>
-    {% block extra_js %}{% endblock %}
-    <script type="text/javascript">
-        document.write('<link rel="stylesheet" type="text/css" href="/css/js.css"');
-    </script>
+<title>{{ page.title }} | Matthias Endler</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta name="author" content="Matthias Endler" />
+<meta name="publisher" content="Matthias Endler"/>
+<meta name="copyright" content="Matthias Endler"/>
+<meta name="description" content="Private blog of Matthias Endler, a developer living in Bavaria, Germany. He loves coding, writing and designing. On his page you find a list of his current projects and howtos."/>
+<meta name="keywords" content="linux, hacking, howtos, tech-blog, mindfuck, hacking-projects, karban, jQuery, ratingbar"/>
+<meta name="page-topic" content="Tech blog"/>
+<meta name="page-type" content="Private Homepage"/>
+<meta name="audience" content="Experten, Fans, Fortgeschrittene"/>
+<meta http-equiv="content-language" content="en-us"/>
+<meta name="robots" content="index, follow"/>
+
+<link rel="icon" href="/favicon.ico" type="image/ico" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/css/master.css" />
+
+<link rel="stylesheet" type="text/css" href="/css/min.css" />
+
 </head>
+
 <body>
     <div id="wrapper">
         {% block body %}
