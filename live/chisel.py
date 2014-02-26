@@ -12,7 +12,7 @@ import shutil
 
 #Settings
 SOURCE = "./blog/" #end with slash
-DESTINATION = "./export/" #end with slash
+DESTINATION = "./site/" #end with slash
 HOME_SHOW = 15 #numer of entries to show on homepage
 TEMPLATE_PATH = "./templates/"
 TEMPLATE_OPTIONS = {}
