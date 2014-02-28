@@ -3,11 +3,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>
-{% if entry is defined %}
-  {{ entry.title }} | Matthias Endler
-{% else %}
+
   Matthias Endler
-{% endif %}
+
 </title>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 <meta name="author" content="Matthias Endler" />
@@ -31,23 +29,36 @@
 
 <body>
     <div id="wrapper">
-        {% block body %}
+        
             <div id="nav">
                 <p><a href="/">Home</a> | <a href="/archives.html">Archives</a></p>
             </div>
             <div id="header">
                 <h1>nodnod.net</h2>
-                {% block header %}{% endblock %}
+                
             </div>
 
             <div id="main">
-                {% block main %}{% endblock %}
+                
+    
+        <div class="entry">
+            <h2><a href="/2011/What-is-Wikipedia/index.html">What is Wikipedia
+</a></h2>
+            <h3>November 25 - 2011</h3>
+            <div class="entry_content">
+                <p>Wikipedia - The foundation -&gt; Provides infrastructure
+  Wikipedia - The community -&gt; Rulesets, administration, maintainers
+  Wikipedia - The encyclopedia -&gt; The pure content, ...
+            </div>
+        </div>
+    
+
             </div>
 
             <div id="footer">
-                {% block footer %}{% endblock %}
+                
             </div>
-        {% endblock %}
+        
     </div>
 
   </div><!-- end: page margins -->
@@ -69,4 +80,3 @@
 
 </body>
 </html>
-
