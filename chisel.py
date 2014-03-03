@@ -6,7 +6,7 @@
 # Requires:
 # jinja2
 
-import sys, re, time, os, codecs
+import sys, re, time, os, codecs, datetime
 import jinja2, markdown
 import shutil
 
@@ -18,7 +18,7 @@ TEMPLATE_PATH = "./templates/"
 TEMPLATE_OPTIONS = {}
 TEMPLATES = {
     'home': "home.html",
-    'detail': "detail.html",
+    'blogpost': "post.html",
     'static': "static.html",
     'archive': "archive.html",
 }
@@ -47,13 +47,24 @@ def get_tree(source):
             path = os.path.join(root, name)
             f = open(path, "rU")
             title = f.readline()
-            date = time.strptime(name[:10], ENTRY_TIME_FORMAT)
+            try:
+              date = time.strptime(name[:10], ENTRY_TIME_FORMAT)
+              # Blog entries
+              static = False
+              url = '/'.join([str(year), "-".join(title.split()), "index.html"])
+            except:
+              # Static pages
+              static = True
+              t = os.path.getmtime(path)
+              date = time.strptime(t, ENTRY_TIME_FORMAT)
+              url = '/'.join(["-".join(title.split()), "index.html"])
+            print date
             year, month, day = date[:3]
             files.append({
                 'title': title,
-                'epoch': time.mktime(date),
+                'static': static,
                 'content': FORMAT(''.join(f.readlines()).decode('UTF-8')),
-                'url': '/'.join([str(year), "-".join(title.split()), "index.html"]),
+                'url': url,
                 'pretty_date': time.strftime(TIME_FORMAT, date),
                 'date': date,
                 'year': year,
@@ -103,16 +114,18 @@ def master_archive(f, e):
 @step
 def detail_pages(f, e):
     """Generate detail pages of individual posts"""
-    template = e.get_template(TEMPLATES['detail'])
-    for file in f:
-        write_file(file['url'], template.render(entry=file))
+    template = e.get_template(TEMPLATES['blogpost'])
+    posts = [file for file in f if not file['static']]
+    for p in posts:
+      write_file(p['url'], template.render(entry=p))
 
 @step
 def static_pages(f, e):
     """Generate static pages"""
     template = e.get_template(TEMPLATES['static'])
-    for file in f:
-        write_file(file['url'], template.render(entry=file))
+    static_pages = [file for file in f if file['static']]
+    for s in static_pages:
+      write_file(s['url'], template.render(entry=s))
 
 def main():
     print "Chiseling..."
