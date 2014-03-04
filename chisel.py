@@ -56,7 +56,8 @@ def get_tree(source):
               # Static pages
               static = True
               t = os.path.getmtime(path)
-              date = time.strptime(t, ENTRY_TIME_FORMAT)
+              t2 = time.gmtime(t)
+              date = time.strptime(t2, ENTRY_TIME_FORMAT)
               url = '/'.join(["-".join(title.split()), "index.html"])
             print date
             year, month, day = date[:3]
