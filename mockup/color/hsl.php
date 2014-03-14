@@ -1,6 +1,11 @@
 <?php
 
 
+function normalize($i) {
+    // returns a normalized number with flat distribution from 0 to 1
+    return (float)$i/(float)getrandmax();
+}
+
 /**
  * Converts an HSL color value to RGB. Conversion formula
  * adapted from http://en.wikipedia.org/wiki/HSL_color_space.
@@ -36,11 +41,16 @@ function hslToRgb($h, $s, $l){
     return [round($r * 255), round($g * 255), round($b * 255)];
 }
 
-echo md5("Matthias Endler");
+function colorize($name) {
+  $id = hexdec(md5($name));
+  return normalize($id);
+}
 
+echo colorize("Markus Enzler") . "\n";
+echo colorize("Andreas Grunwald") . "\n";
+echo colorize("Frankenstein") . "\n";
 
-$hue = mt_rand() / mt_getrandmax();
 $saturation = 1;
 $light = 0.5;
 
-print_r(hslToRgb($hue, $saturation, $light));
+#print_r(hslToRgb($hue, $saturation, $light));
