@@ -15,7 +15,7 @@
    inkscape:version="0.48.2 r9819"
    width="210mm"
    height="297mm"
-   sodipodi:docname="logo.svg"
+   sodipodi:docname="logo2.svg"
    inkscape:export-filename="C:\Dokumente und Einstellungen\mre\Eigene Dateien\Eigene Bilder\svg\tuxjunior2.png"
    inkscape:export-xdpi="200"
    inkscape:export-ydpi="200"
@@ -1030,53 +1030,43 @@
      bordercolor="#666666"
      pagecolor="#ffffff"
      id="base"
-     inkscape:zoom="0.32"
-     inkscape:cx="1571.2556"
-     inkscape:cy="598.84869"
+     inkscape:zoom="0.13745113"
+     inkscape:cx="1194.5119"
+     inkscape:cy="1620.1765"
      inkscape:window-x="14"
      inkscape:window-y="33"
      inkscape:current-layer="svg2"
      showgrid="false"
      inkscape:window-maximized="0" />
   <path
-     sodipodi:type="arc"
-     style="opacity:1;fill:#000000;fill-opacity:1"
+     style="fill:#000000;fill-opacity:1"
+     d="m 503.72375,-947.12028 c -202.64838,0 -366.9375,238.65547 -366.9375,533.0625 0,2.68695 0.0352,5.38497 0.0625,8.0625 l 113.34375,0 c 12.00488,-313.59001 80.71844,-507.2787 209.78125,-392.1875 36.80112,32.90142 37.67146,30.97381 70.6875,0 24.71524,-23.18648 47.97713,-34.0259 69.5625,-34.21875 89.4632,-0.79933 150.14759,181.43056 166.40625,426.40625 l 103.96875,0 c 0.0273,-2.67753 0.0625,-5.37555 0.0625,-8.0625 0,-294.40703 -164.28912,-533.0625 -366.9375,-533.0625 z"
      id="path11887"
-     sodipodi:cx="368.97272"
-     sodipodi:cy="431.77194"
-     sodipodi:rx="297.36615"
-     sodipodi:ry="369.96725"
-     d="M 666.33887,431.77194 A 297.36615,369.96725 0 1 1 71.606567,431.77194 A 297.36615,369.96725 0 1 1 666.33887,431.77194 z"
-     transform="matrix(1.2339244,0,0,1.4408602,-85.317195,-69.017718)"
-     inkscape:export-filename="/Users/matthias/Pictures/Projekte/Matthias Endler Homepage/Design09/tux1.png"
-     inkscape:export-xdpi="140"
-     inkscape:export-ydpi="140" />
+     inkscape:connector-curvature="0" />
   <path
-     style="fill:#ffffff;fill-opacity:1;stroke:#c8c8c8;stroke-width:9.13319111;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="M 326.21416,169.23367 C 178.63538,40.534516 109.94471,306.50202 114.71479,691.27976 C 118.68053,844.58962 638.62548,846.09207 637.25178,673.96796 C 635.28219,313.945 540.72066,37.28506 396.89901,169.23366 C 363.87749,199.52913 363.02139,201.41453 326.21416,169.23367 z"
+     style="fill:none;stroke:#c8c8c8;stroke-width:9.23410988;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     d="m 766.49874,-405.65 c -15.40216,-249.27373 -75.78935,-427.55544 -166.29021,-426.74684 -21.58537,0.19285 -44.83571,11.03168 -69.55095,34.21816 -33.01604,30.97381 -33.87465,32.90142 -70.67577,0 -130.23227,-116.13406 -199.01309,73.69236 -210.09011,392.30133"
      id="path14894"
-     sodipodi:nodetypes="cccsc"
-     inkscape:export-filename="/Users/matthias/Pictures/Projekte/Matthias Endler Homepage/Design09/tux1.png"
-     inkscape:export-xdpi="140"
-     inkscape:export-ydpi="140" />
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="csscc" />
   <g
      id="g11296"
      transform="matrix(0.4639645,-4.2240804e-2,4.2240804e-2,0.4639645,244.80143,165.63887)" />
   <path
      style="fill:#331f00;fill-opacity:1;fill-rule:evenodd;stroke:#a16200;stroke-width:3.64940071;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-     d="m 498.51553,351.19671 -124.31101,74.40332 -137.58109,-73.25949 261.8921,-1.14383 z"
+     d="m 632.27053,-615.95482 -124.31101,74.40332 -137.58109,-73.25949 261.8921,-1.14383 z"
      id="path10472"
      sodipodi:nodetypes="cccc"
      inkscape:connector-curvature="0" />
   <path
      style="fill:#efba00;fill-opacity:1;fill-rule:evenodd;stroke:#a16200;stroke-width:3.70499492;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-     d="m 503.88805,351.53416 -130.09766,63.0644 -142.53062,-62.84283 272.62828,-0.22157 z"
+     d="m 637.64305,-615.61737 -130.09766,63.0644 -142.53062,-62.84283 272.62828,-0.22157 z"
      id="path8710"
      sodipodi:nodetypes="cccc"
      inkscape:connector-curvature="0" />
   <g
      id="g11819"
-     transform="matrix(1.2194411,0,0,1.2194411,-81.873604,-135.91281)">
+     transform="matrix(1.2194411,0,0,1.2194411,51.881395,-1103.0643)">
     <g
        transform="matrix(0.4639645,-0.0422408,0.0422408,0.4639645,137.47205,164.69214)"
        id="g11300">
@@ -1104,7 +1094,7 @@
   </g>
   <g
      id="g11825"
-     transform="matrix(1.2194411,0,0,1.2194411,-81.873604,-135.91281)">
+     transform="matrix(1.2194411,0,0,1.2194411,51.881395,-1103.0643)">
     <path
        sodipodi:type="arc"
        style="fill:#000000;fill-opacity:1;stroke:none"
@@ -1127,10 +1117,45 @@
        sodipodi:type="arc" />
   </g>
   <path
-     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     d="M 314.27325,33.957705 C 314.27325,33.957705 375.93445,-5.8237208 381.90167,-35.659789 C 387.86888,-65.495858 385.87981,-5.8237208 354.05467,27.990491 C 322.22953,61.804702 409.74867,0.14349255 415.71588,-35.659789 C 421.68309,-71.463072 429.63938,6.1107066 395.82517,35.946776 C 362.01096,65.782845 451.51916,6.1107066 457.48638,-31.681647 C 463.45359,-69.474 473.39895,12.077921 443.56288,35.946776 C 413.72681,59.815631 318.25139,39.924918 314.27325,33.957705 z"
+     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+     d="m 448.02825,-933.19383 c 0,0 61.6612,-39.78142 67.62842,-69.61747 5.96721,-29.8361 3.97814,29.83605 -27.847,63.65026 -31.82514,33.81421 55.694,-27.847 61.66121,-63.65026 5.96721,-35.8033 13.9235,41.77047 -19.89071,71.60654 -33.81421,29.83607 55.69399,-29.83607 61.66121,-67.62842 5.96721,-37.79232 15.91257,43.75957 -13.9235,67.62842 -29.83607,23.86886 -125.31149,3.97815 -129.28963,-1.98907 z"
      id="path11893"
      inkscape:export-filename="/Users/matthias/Pictures/Projekte/Matthias Endler Homepage/Design09/tux1.png"
      inkscape:export-xdpi="140"
-     inkscape:export-ydpi="140" />
+     inkscape:export-ydpi="140"
+     inkscape:connector-curvature="0" />
+  <text
+     xml:space="preserve"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Baskerville;-inkscape-font-specification:Baskerville"
+     x="1473.8772"
+     y="272.98209"
+     id="text3972"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3974"
+       x="1473.8772"
+       y="272.98209" /></text>
+  <text
+     xml:space="preserve"
+     style="font-size:81.04494476px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#8f8f8f;fill-opacity:1;stroke:none;font-family:Baskerville;-inkscape-font-specification:Baskerville"
+     x="957.29193"
+     y="-724.22211"
+     id="text3980"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3982"
+       x="957.29193"
+       y="-724.22211"
+       style="font-size:291.76177979000004825px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#8f8f8f;fill-opacity:1;font-family:Clear Sans;-inkscape-font-specification:Clear Sans">MATTHIAS</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:396.8302002px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#4d4d4d;fill-opacity:1;stroke:none;font-family:clear sans light;-inkscape-font-specification:clear sans light"
+     x="943.04956"
+     y="-399.17468"
+     id="text3984"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3986"
+       x="943.04956"
+       y="-399.17468">ENDLER</tspan></text>
 </svg>
